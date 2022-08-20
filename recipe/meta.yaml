@@ -1,6 +1,6 @@
 {% set name = "hop-client" %}
-{% set version = "0.6.0" %}
-{% set sha256 = "46ba23fca457d3ae98bb3b2e7c49e3957947783da0f15dd2fb333c56124a6d95" %}
+{% set version = "0.7.0" %}
+{% set sha256 = "574182c763a79bfdce3dc11a4b1d2b693a17d1edb5d0eeff86881dce043dcbed" %}
 
 package:
   name: {{ name }}
