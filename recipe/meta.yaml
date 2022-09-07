@@ -55,6 +55,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - adambrazier
     - mjuric
     - bfc5288
     - myNameIsPatrick
