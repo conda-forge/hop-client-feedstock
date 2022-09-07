@@ -55,6 +55,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - cnweaver
     - adambrazier
     - mjuric
     - bfc5288
