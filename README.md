@@ -1,11 +1,11 @@
-About hop-client
-================
+About hop-client-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hop-client-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/scimma/hop-client
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hop-client-feedstock/blob/main/LICENSE.txt)
 
 Summary: A pub-sub client library for Multimessenger Astrophysics
 
