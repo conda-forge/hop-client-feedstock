@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -21,6 +21,7 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools
     - setuptools-scm
   run:
     - python >=3.6
@@ -28,17 +29,19 @@ requirements:
     - dataclasses
     - fastavro >=1.4.0
     - pluggy >=0.11
+    - setuptools
     - toml >=0.9.4
     - xmltodict >=0.9.0
 
 test:
   requires:
+    - pip
     - pytest >=5.0
     - pytest-console-scripts
-    - setuptools
   source_files:
     - tests
   commands:
+    - python -m pip check
     - python -m pytest tests
 
 about:
