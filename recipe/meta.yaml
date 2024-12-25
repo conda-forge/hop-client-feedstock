@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hop-client-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hop-client-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -19,12 +19,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools-scm
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - adc-streaming >=2.1.0
     - dataclasses
     - fastavro >=1.4.0
@@ -38,6 +38,7 @@ test:
     - pip
     - pytest >=5.0
     - pytest-console-scripts
+    - python {{ python_min }}
   source_files:
     - tests
   commands:
