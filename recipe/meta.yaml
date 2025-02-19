@@ -1,13 +1,16 @@
 {% set name = "hop-client" %}
-{% set version = "0.10.1" %}
-{% set sha256 = "daadf4b41ecb01ec77185b238782021dfa0ab0030472a33ac353b98fefd18cec" %}
+{% set version = "0.11.0" %}
+{% set sha256 = "0e91b7f5c6d6c9c72403e18ae153d6391adb7deb1a4a170884f7ec01787eb411" %}
+
+{% set PYTHON = PYTHON | default("$PYTHON") %}
+{% set python_min = python_min | default("3.6") %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hop-client-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hop-client-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -19,17 +22,19 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >={{ python_min }}
     - pip
     - setuptools
     - setuptools-scm
   run:
-    - python >=3.6
-    - adc-streaming >=2.1.0
+    - python >={{ python_min }}
+    - adc-streaming >=2.5.0
+    - bson
     - dataclasses
     - fastavro >=1.4.0
     - pluggy >=0.11
     - setuptools
+    - scramp
     - toml >=0.9.4
     - xmltodict >=0.9.0
 
