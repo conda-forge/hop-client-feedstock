@@ -3,7 +3,7 @@
 {% set sha256 = "e6b65d3dd59e0cdf1a3985db726741d8a896993d871eac11db9b09df297d8afb" %}
 
 {% set PYTHON = PYTHON | default("$PYTHON") %}
-{% set python_min = python_min | default("3.6") %}
+{% set python_min = python_min | default("3.8") %}
 
 package:
   name: {{ name }}
