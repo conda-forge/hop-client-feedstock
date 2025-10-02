@@ -1,6 +1,6 @@
 {% set name = "hop-client" %}
-{% set version = "0.12.0" %}
-{% set sha256 = "e6b65d3dd59e0cdf1a3985db726741d8a896993d871eac11db9b09df297d8afb" %}
+{% set version = "0.12.1" %}
+{% set sha256 = "75c8d3c1d5c3bd38b66a938758c0017e32eb8b18b09b42b51a60e9ad3b0b8819" %}
 
 {% set PYTHON = PYTHON | default("$PYTHON") %}
 {% set python_min = python_min | default("3.8") %}
