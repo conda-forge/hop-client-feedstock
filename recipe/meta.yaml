@@ -1,6 +1,6 @@
 {% set name = "hop-client" %}
-{% set version = "0.12.1" %}
-{% set sha256 = "75c8d3c1d5c3bd38b66a938758c0017e32eb8b18b09b42b51a60e9ad3b0b8819" %}
+{% set version = "0.12.2" %}
+{% set sha256 = "7457189c92120fd4bb83e617161f3315d2933fbb0fc8482a966dbda5b85a8262" %}
 
 {% set PYTHON = PYTHON | default("$PYTHON") %}
 {% set python_min = python_min | default("3.8") %}
@@ -10,7 +10,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hop_client-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/hop_client-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
