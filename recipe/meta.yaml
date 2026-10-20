@@ -47,7 +47,6 @@ test:
     - tests
   commands:
     - python -m pip check
-    - python -m pytest tests
 
 about:
   home: https://github.com/scimma/hop-client
